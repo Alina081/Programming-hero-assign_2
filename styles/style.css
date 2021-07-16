@@ -1,0 +1,225 @@
+/*--------- Fonts ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+ /* nav styles  */
+ nav a {
+    text-decoration: none;
+    color: white;
+   font-weight: bold;
+    margin-right: 40px;
+}
+nav{
+    display: flex;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 1160px;
+height: 44px;
+left: 90px;
+top: 30px;
+
+}
+nav .log
+{
+    position: absolute;
+    height: 35px;
+    width: 90px;
+    left: 800px;
+    top: 10px;
+    color: white;
+background-color: #E02C6D;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+p{
+    top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* background color  */
+.contain{
+    width: 1263px;
+    background-color: rgba(27, 0, 126, 0.973);
+}
+.top{
+    display: flex;
+
+}
+
+.heading{
+    margin:60px 120px;
+    color: white;
+    
+    padding: 0px;
+}
+
+
+.banner:hover {
+    transform: scale(1.5);
+        transition: transform 3s ease-in-out   
+}
+.banner img{
+    width: 400px;
+height: 330px;
+    margin: 114px 19px;
+left: 400px;
+}
+
+.watch-button{
+    
+    text-decoration: none;
+    width: 140px;
+    height: 34px;
+    left: 0px;
+    background: #E02C6D;
+    color: white;
+    padding: 8px ;
+    
+}
+
+
+  /* Players details */
+
+.main-container{
+    width: 1050px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+}
+.player{
+    padding: 15px;
+    margin: 70px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 20px 23px 20px #eee7e7;
+    border-radius: 10px;
+    text-overflow: hidden;
+
+}
+.player-heading{
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-banner img{
+   
+    width: 220px;
+  
+
+}
+
+
+
+ /* highlights */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1263px;
+}
+.information{
+    width: 50%;
+    padding: 10px 150px;
+}
+.highlight img{
+    width: 80%;
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.information{
+    width: 50%;
+    padding-top: 50px;
+}
+.video-heading{
+    text-align: left;
+    color: blueviolet;
+   
+}
+/* Footer  */
+.footer-logo{
+    text-align: center;
+}
+
+
+/* font awesome icon  */
+
+.icon {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0px;
+}
+
+
+
+ /* Responsive  */
+
+
+@media (max-width:688px) {
+    h1{
+    font-size:36px
+    }
+    .container{
+        width: 461px;;
+    }
+    .player-banner{
+        width: 30%;
+    }
+    .heading, .top{
+        display: grid;
+        flex-direction: column;
+    }
+    .main-container{
+        width: 461px;
+        align-items: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        width:461px;
+        align-items: center;
+    }
+    .information{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    
+    } 
+    .footer-logo img{
+        width: 70%;
+        height: auto;
+    }
+    .copyright{
+        justify-content: center;
+    }
+
+}
